@@ -4,7 +4,13 @@ let front = document.querySelector('.mainFront')
 
 button.addEventListener('click', async function(evt){
   evt.preventDefault();
-  let result = await axios.get('https://slaphim.herokuapp.com/addslap')
+  const names = document.getElementById('username');
+  console.log(names.value)
+  if(names.value == ''){
+    names.setAttribute('placeholder' , 'required!')
+    return 
+  };
+  let result = await axios.get(`https://slaphim.herokuapp.com/addslap/${names.value}`)
   console.log(result.data.message)
   button.disabled = true;
   let num = 10;

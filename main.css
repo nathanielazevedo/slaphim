@@ -1,6 +1,7 @@
 body{
   background-color: rgb(59, 59, 66);
   max-height: 100vh;
+  max-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +59,31 @@ h1{
 
 
 @media only screen and (max-width: 600px) {
-  iframe{
-    width: 100vw;
+
+  h1{
+    font-size: 30px;
   }
+  iframe{
+    width: 95vw;
+  }
+
+  .game-container{
+    width: 99vw;
+  }
+
+  #button{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
 }

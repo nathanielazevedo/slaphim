@@ -1,12 +1,64 @@
 body{
-  background-color: green;
-  height: 50vh;
+  background-color: rgb(59, 59, 66);
+  max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-button{
+
+h1{
+  color: white;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
+  font-size: 100px;
+}
+
+.game-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid red 1px;
   padding: 20px;
-  margin-bottom: 20px;
+  background-color: rgb(30, 100, 180);
+}
+
+#button{
+  width: 200px;
+}
+
+  .pushable {
+    margin: 50px 10px 0px 20px; 
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    width: fit-content;
+  }
+  .front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+  }
+
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+
+  iframe{
+    border: solid red 5px;
+  }
+
+
+@media only screen and (max-width: 600px) {
+  iframe{
+    width: 100vw;
+  }
 }

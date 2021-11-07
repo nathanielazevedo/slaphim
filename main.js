@@ -4,8 +4,8 @@ let front = document.querySelector('.mainFront')
 
 button.addEventListener('click', async function(evt){
   evt.preventDefault();
-  // let result = await axios.get('https://slaphim.herokuapp.com/addslap')
-  // console.log(result.data.message)
+  let result = await axios.get('https://slaphim.herokuapp.com/addslap')
+  console.log(result.data.message)
   button.disabled = true;
   let num = 10;
   let countdown = setInterval(() => {
